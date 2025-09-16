@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uikit.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="uikit.js"></script>
+    <script src="uikit-icons.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="CV Français Simple Moderne Bleu.pdf" class="uk-navbar-item uk-logo uk-light">MOMHA Tristan.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>A propos de moi</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projet</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="CV Français Simple Moderne Bleu.pdf" class="uk-navbar-item uk-logo uk-light">MOMHA Tristan.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Accueil</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>A propos de moi</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projet</a></li>
+            <li class="uk-active"><a href="mailto:">Contacts</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<img src="image-hackeur.png" alt="Mon image" class="centered">
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-1top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Je suis Tristan MOMHA,  <br>étudiant en 2ème année de BTS Services Informatiques aux Organisations(SIO). Option SISR.</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">A propos de moi</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Actuellement étudiant en deuxième année de BTS Services Informatiques aux Organisations, option SISR, à l’ORT Daniel Mayer. Au cours de ma formation, j’ai pu acquérir des connaissances solides en administration systèmes, réseaux et sécurité, ainsi qu’en gestion de serveurs et en virtualisation. Ces apprentissages me permettent de mieux comprendre le fonctionnement des infrastructures informatiques et de développer des compétences pratiques.
+
+<br> <br> et curieux des nouvelles technologies, je cherche constamment à approfondir mes connaissances et à relever de nouveaux défis techniques. Mon objectif est de continuer à progresser dans ce domaine et de construire progressivement un parcours professionnel dans l’administration systèmes et réseaux.</p>
+
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Project & Stage</h3>
+<p class="uk-margin-xlarge-left">Projet sur lequel j'ai travaillé.</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Change all of this to ur projects -->
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Debian</h4>
+        <p>Dans le cadre de mon BTS SIO option SISR, je travaille actuellement sur la mise en place d’une solution de gestion de parc informatique sous Debian. J’ai réussi à installer et configurer GLPI, ce qui m’a permis de disposer d’une base fonctionnelle pour la gestion des actifs. J’ai ensuite entrepris l’installation d’OCS Inventory afin d’automatiser la remontée des informations matérielles et logicielles des postes clients. Cependant, j’ai rencontré un problème de compatibilité de version entre OCS et GLPI, ce qui a empêché l’intégration complète des deux outils. <br> <br>Pour remédier à cette difficulté, je prévois de vérifier précisément la version de GLPI installée et d’identifier, dans la documentation officielle, la version d’OCS Inventory compatible. Ensuite, je pourrai soit mettre à jour GLPI, soit installer une version adaptée d’OCS Inventory afin d’assurer une parfaite compatibilité. Cette démarche me permet de développer mes compétences en administration système sous Debian, en déploiement d’applications web et surtout en résolution de problèmes techniques liés aux versions logicielles.</p>
+        <img src="screen-glpi.jpg" style="width:700px; height:350px;">
+        <img src="windows-server.png" style="width:400px; height:350px;">
+
+        </div>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Stage</h4>
+            <p>J’ai effectué un stage de six semaines chez Visionetics, entreprise spécialisée dans le réseaux et le multimédia. Durant ce stage, j’ai installé et configuré TrueNAS sur des serveurs, utilisé Wireshark pour analyser le trafic réseau et VLC pour manipuler des flux multimédias. J’ai également accompagné mon maître de stage dans des salles de serveurs pour découvrir l’organisation physique des infrastructures. Ce stage m’a permis de développer mes compétences en administration système et réseau, de découvrir des outils professionnels et de mieux comprendre le fonctionnement concret d’une infrastructure informatique.</p>
+            <img src="salle-serveurs.jpg" style="width:350px; height:250px;">
+            <img src="truenas-scale.jpg" style="width:350px; height:250px;">
+            <img src="wireshark.png" style="width:350px; height:250px;">
+            <img src="vlc-media.jpg" style="width:350px; height:250px;">
+            <img src="udp.png" style="width:350px; height:250px;">
+
+
+
+
+
+
+            <a class="uk-button-text uk-text-decoration-none" href="">
+                                   
+            </div></div>
+            <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+            <h3 id="contact" class="uk-margin-xlarge-left uk-light">Contacts</h3>
+            <p class="uk-margin-xlarge-left uk-margin-xlarge-right"> Mail : tristan.momha@outlook.fr <br> Numero de téléphone : 07 68 11 08 10 <br> Adresse : 12 Rue des Tilleuls Appartement 4B 75012 Paris, France</p>
+            <a href="" class="uk-margin-xlarge-left uk-light uk-button-text">&nbsp;<a href="https://github.com/TristanM-ort" class="uk-button-text uk-light" uk-icon="github"></a> </a>
+
+
+
+    <br>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+    
+</body>
+</html>

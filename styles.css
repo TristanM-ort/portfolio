@@ -1,0 +1,15 @@
+html{
+    font-family: IBM Plex Mono;
+}
+
+p{
+    color: white;
+}
+
+.centered {
+  display: block;
+  margin-left: 155px;
+  margin-right: auto;
+  width: 450px;
+  height:550px;
+}
