@@ -21,7 +21,7 @@
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>A propos de moi</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>Présentation</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projet</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll>Contact</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#cv" uk-scroll>CV</a></li>
@@ -110,16 +110,11 @@
     <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Debian</h4>
         <p>Dans le cadre de mon BTS SIO option SISR, je travaille actuellement sur la mise en place d’une solution complète de gestion de parc informatique sous un environnement mixte Debian et Windows Server.
-
-J'ai commencé par installer et configurer GLPI sur un serveur Debian, ce qui m'a permis de disposer d'une base fonctionnelle pour la gestion des actifs et des tickets. Pour automatiser la remontée des informations matérielles et logicielles des postes clients, j'ai ensuite entrepris d'intégrer OCS Inventory NG.
-
-Cependant, ce projet m'a confronté à plusieurs défis techniques. Le premier est un problème de compatibilité de version entre OCS Inventory et GLPI, qui a empêché l'installation d'OCS en tant que plugin dans l'interface de GLPI. Bien que le service OCS Inventory soit opérationnel et que l'agent OCS Inventory installé sur une machine cliente Windows s'affiche correctement et communique avec le serveur, l'intégration directe au sein de GLPI n'est pas fonctionnelle.
-
-Pour résoudre ce problème, ma prochaine étape consiste à vérifier précisément la version de GLPI installée et à identifier, via la documentation officielle, la version d'OCS Inventory NG compatible. Je devrai alors soit mettre à jour GLPI, soit installer une version spécifique d'OCS Inventory pour rétablir la compatibilité et permettre son installation en tant que plugin.
-
-Parallèlement, j'ai configuré l'infrastructure réseau côté Windows Server. Ce dernier héberge les rôles AD DS (Active Directory Domain Services) pour la gestion centralisée des identités, DNS pour la résolution de noms, et DHCP pour l'attribution automatique des adresses IP aux postes clients. J'ai veillé à configurer correctement les adresses IP et les options DHCP pour garantir que les postes clients puissent communiquer avec les différents serveurs.
-
-Cette démarche globale me permet de développer concrètement mes compétences en administration système sous Debian, en gestion d'infrastructures hybrides Linux/Windows, en déploiement d'applications web et, surtout, en résolution de problèmes techniques complexes liés à l'intégration logicielle et à la compatibilité des versions.</p>
+            J'ai commencé par installer et configurer GLPI sur un serveur Debian, ce qui m'a permis de disposer d'une base fonctionnelle pour la gestion des actifs et des tickets. Pour automatiser la remontée des informations matérielles et logicielles des postes clients, j'ai ensuite entrepris d'intégrer OCS Inventory NG.
+            Cependant, ce projet m'a confronté à plusieurs défis techniques. Le premier est un problème de compatibilité de version entre OCS Inventory et GLPI, qui a empêché l'installation d'OCS en tant que plugin dans l'interface de GLPI. Bien que le service OCS Inventory soit opérationnel et que l'agent OCS Inventory installé sur une machine cliente Windows s'affiche correctement et communique avec le serveur, l'intégration directe au sein de GLPI n'est pas fonctionnelle.
+            Pour résoudre ce problème, ma prochaine étape consiste à vérifier précisément la version de GLPI installée et à identifier, via la documentation officielle, la version d'OCS Inventory NG compatible. Je devrai alors soit mettre à jour GLPI, soit installer une version spécifique d'OCS Inventory pour rétablir la compatibilité et permettre son installation en tant que plugin.
+            <br><br>Parallèlement, j'ai configuré l'infrastructure réseau côté Windows Server. Ce dernier héberge les rôles AD DS (Active Directory Domain Services) pour la gestion centralisée des identités, DNS pour la résolution de noms, et DHCP pour l'attribution automatique des adresses IP aux postes clients. J'ai veillé à configurer correctement les adresses IP et les options DHCP pour garantir que les postes clients puissent communiquer avec les différents serveurs.
+            Cette démarche globale me permet de développer concrètement mes compétences en administration système sous Debian, en gestion d'infrastructures hybrides Linux/Windows, en déploiement d'applications web et, surtout, en résolution de problèmes techniques complexes liés à l'intégration logicielle et à la compatibilité des versions.</p>
         <img src="screen-glpi.jpg" style="width:600px; height: 300px;"> 
         <img src="windows-server.png" style="width: 600px; height: 300px;">
         <img src="screen-machine.jpg" style="width: 600px; height: 300px;">
