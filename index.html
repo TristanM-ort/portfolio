@@ -21,7 +21,7 @@
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>Présentation</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>A propos de moi</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projet</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll>Contact</a></li>
             <li><a class="uk-button-text uk-text-capitalize" href="#cv" uk-scroll>CV</a></li>
@@ -53,7 +53,7 @@
 
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             <li class="uk-active"><a href="#" uk-scroll>Accueil</a></li>
-            <li class="uk-active"><a href="#presentation" uk-scroll>Présentation</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>A propos de moi</a></li>
             <li class="uk-active"><a href="#projects" uk-scroll>Projet</a></li>
             <li class="uk-active"><a href="mailto:">Contacts</a></li> 
             <li class="uk-active"><a href="cv:">CV</a></li>
@@ -72,7 +72,7 @@
 <img src="image-hackeur.png" alt="Mon image" class="centered">
 <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-1top uk-margin-xlarge-bottom">
     <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Je suis Tristan MOMHA,  <br>étudiant en 2ème année de BTS Services Informatiques aux Organisations(SIO). Option SISR.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll></a>
 
 
 </section>
@@ -85,7 +85,7 @@
 
 <!-- About Me -->
 <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Présentation</h3>
+<h3 class="uk-margin-xlarge-left uk-light">A propos de moi</h3>
 <!-- Change here to ur paragraph -->
 <p class="uk-margin-xlarge-left uk-margin-xlarge-right">Actuellement étudiant en deuxième année de BTS Services Informatiques aux Organisations, option SISR, à l’ORT Daniel Mayer. Au cours de ma formation, j’ai pu acquérir des connaissances solides en administration systèmes, réseaux et sécurité, ainsi qu’en gestion de serveurs et en virtualisation. Ces apprentissages me permettent de mieux comprendre le fonctionnement des infrastructures informatiques et de développer des compétences pratiques.
 
@@ -103,24 +103,16 @@
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
 <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
 <h3 class="uk-margin-xlarge-left uk-light">Project & Stage</h3>
-<p class="uk-margin-xlarge-left">Projet sur lequel j'ai travaillé.</p>
+<p class="uk-margin-xlarge-left">Projet sur lequel j'ai travaillé. <br> <br>Vous trouverez également les compétences que j’ai acquises au cours de mes deux années de BTS SIO <br><br> <a href="competences.xlsx">Cliquez ici</a></p>
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
     <!-- Change all of this to ur projects -->
     <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Debian</h4>
-        <p>Dans le cadre de mon BTS SIO option SISR, je travaille actuellement sur la mise en place d’une solution complète de gestion de parc informatique sous un environnement mixte Debian et Windows Server.
-            J'ai commencé par installer et configurer GLPI sur un serveur Debian, ce qui m'a permis de disposer d'une base fonctionnelle pour la gestion des actifs et des tickets. Pour automatiser la remontée des informations matérielles et logicielles des postes clients, j'ai ensuite entrepris d'intégrer OCS Inventory NG.
-            Cependant, ce projet m'a confronté à plusieurs défis techniques. Le premier est un problème de compatibilité de version entre OCS Inventory et GLPI, qui a empêché l'installation d'OCS en tant que plugin dans l'interface de GLPI. Bien que le service OCS Inventory soit opérationnel et que l'agent OCS Inventory installé sur une machine cliente Windows s'affiche correctement et communique avec le serveur, l'intégration directe au sein de GLPI n'est pas fonctionnelle.
-            Pour résoudre ce problème, ma prochaine étape consiste à vérifier précisément la version de GLPI installée et à identifier, via la documentation officielle, la version d'OCS Inventory NG compatible. Je devrai alors soit mettre à jour GLPI, soit installer une version spécifique d'OCS Inventory pour rétablir la compatibilité et permettre son installation en tant que plugin.
-            <br><br>Parallèlement, j'ai configuré l'infrastructure réseau côté Windows Server. Ce dernier héberge les rôles AD DS (Active Directory Domain Services) pour la gestion centralisée des identités, DNS pour la résolution de noms, et DHCP pour l'attribution automatique des adresses IP aux postes clients. J'ai veillé à configurer correctement les adresses IP et les options DHCP pour garantir que les postes clients puissent communiquer avec les différents serveurs.
-            Cette démarche globale me permet de développer concrètement mes compétences en administration système sous Debian, en gestion d'infrastructures hybrides Linux/Windows, en déploiement d'applications web et, surtout, en résolution de problèmes techniques complexes liés à l'intégration logicielle et à la compatibilité des versions.</p>
+        <p>Dans le cadre de mon BTS SIO option SISR, je travaille actuellement sur la mise en place d’une solution de gestion de parc informatique sous Debian. J’ai réussi à installer et configurer GLPI, ce qui m’a permis de disposer d’une base fonctionnelle pour la gestion des actifs. J’ai ensuite entrepris l’installation d’OCS Inventory afin d’automatiser la remontée des informations matérielles et logicielles des postes clients. Cependant, j’ai rencontré un problème de compatibilité de version entre OCS et GLPI, ce qui a empêché l’intégration complète des deux outils. <br> <br>Pour remédier à cette difficulté, je prévois de vérifier précisément la version de GLPI installée et d’identifier, dans la documentation officielle, la version d’OCS Inventory compatible. Ensuite, je pourrai soit mettre à jour GLPI, soit installer une version adaptée d’OCS Inventory afin d’assurer une parfaite compatibilité. Cette démarche me permet de développer mes compétences en administration système sous Debian, en déploiement d’applications web et surtout en résolution de problèmes techniques liés aux versions logicielles.</p>
         <img src="screen-glpi.jpg" style="width:600px; height: 300px;"> 
         <img src="windows-server.png" style="width: 600px; height: 300px;">
         <img src="screen-machine.jpg" style="width: 600px; height: 300px;">
-        <img src="screen-agent.jpg" style="width: 600px; height: 300px;">
-        <img src="ocs.jpg" style="width: 600px; height: 300px;">
-        <img src="screen-serveurs.jpg" style="width: 600px; height: 300px;">
         
         
         
